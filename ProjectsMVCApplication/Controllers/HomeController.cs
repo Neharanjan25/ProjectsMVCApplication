@@ -9,9 +9,13 @@ namespace ProjectsMVCApplication.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
+        [Authorize]
+        public ContentResult Index()
         {
-            return View();
+            return Content(" I AM FROM HOME CONTROLLER AFTER AUTHENTICATION ");
+           
         }
     }
 }
+
+

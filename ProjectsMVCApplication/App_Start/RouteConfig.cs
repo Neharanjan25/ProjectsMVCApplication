@@ -18,6 +18,11 @@ namespace ProjectsMVCApplication
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Login", action = "Login", id = UrlParameter.Optional }
             );
+           // routes.MapRoute(
+           //    name: "Default",
+           //    url: "{controller}/{action}/{id}",
+           //    defaults: new { controller = "HandleErrorExamples", action = "Index", id = UrlParameter.Optional }
+           //);
         }
     }
 }

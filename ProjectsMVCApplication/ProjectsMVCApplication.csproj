@@ -206,9 +206,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DesignPatternController.cs" />
+    <Compile Include="Controllers\HandleErrorExamplesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ShareMarketChartController.cs" />
+    <Compile Include="Controllers\ValidationMSGexampleController.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -217,6 +219,7 @@
     <Compile Include="Models\DataAccessLayer_model.cs" />
     <Compile Include="Models\DesignPattern.cs" />
     <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\ValidationMSGexampleModel.cs" />
     <Compile Include="Models\WeatherModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -231,6 +234,8 @@
     <Content Include="Views\ShareMarketChart\Chart.cshtml" />
     <Content Include="Views\DesignPattern\Index.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\HandleErrorExamples\Error.cshtml" />
+    <Content Include="Views\ValidationMSGexample\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

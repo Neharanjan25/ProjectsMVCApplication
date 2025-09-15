@@ -1,0 +1,38 @@
+﻿@model ProjectsMVCApplication.Models.ValidationMSGexampleModel
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .field-validation-error{
+        color:red;
+    }
+</style>
+<h2>Index</h2>
+@using (Html.BeginForm(FormMethod.Post))
+{
+
+    <div>
+        @Html.Label("Id : ")
+        @Html.TextBoxFor(Model => Model.id)
+        @Html.ValidationMessageFor(Model => Model.id)
+    </div><br /><br />
+    <div>
+        @Html.Label("Name : ")
+        @Html.TextBoxFor(model => model.Name)
+        @Html.ValidationMessageFor(model => model.Name)
+    </div><br /><br />
+    <div>
+        @Html.Label("Age : ")
+        @Html.TextBoxFor(model => model.Age)
+        @Html.ValidationMessageFor(Model => Model.Age)
+    </div><br /><br />
+    <div>
+        @Html.Label("Email : ")
+        @Html.TextBoxFor(Model => Model.Email)
+        @Html.ValidationMessageFor(Model => Model.Email)
+    </div>
+    <input type="submit" value="submit" />
+
+}
+

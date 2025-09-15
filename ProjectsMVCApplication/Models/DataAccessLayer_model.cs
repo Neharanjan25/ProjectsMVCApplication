@@ -10,7 +10,8 @@ namespace ProjectsMVCApplication.Models
     {
      public int CheckUserDetails(string UserName, string Password)
 {
-       SqlConnection con = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectsMVCApplication;Integrated Security=True;");
+       SqlConnection con = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial" +
+           " Catalog=ProjectsMVCApplication;Integrated Security=True;");
                        
         con.Open();
         string query = "SELECT COUNT(*) FROM LoginTbl WHERE Username=@Username AND Password=@Password";
